@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact | Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@600;700&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+  <style>
+    html, body {
+      height: 100%;
+      margin: 0;
+      padding: 0;
+      font-family: 'Roboto', sans-serif;
+      color: black;
+      overflow-x: hidden;
+    }
+
+    body {
+      background-image: url('images/background.jpg');
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+
+    .navbar {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 20px 50px;
+      position: absolute;
+      top: 0;
+      left: 0;
+      box-sizing: border-box;
+    }
+
+    .logo-btn {
+      background: url('images/cross-logo.png') no-repeat center;
+      background-size: contain;
+      width: 60px;
+      height: 60px;
+      border: none;
+      cursor: pointer;
+      margin-left: 300px;
+      border-radius: 50%;
+      transition: transform 0.3s ease;
+      display: inline-block;
+    }
+
+    .logo-btn:hover {
+      transform: scale(1.08);
+    }
+
+    .menu {
+      display: flex;
+      gap: 30px;
+      margin-right: calc(50px + 12vw);
+    }
+
+    .menu a {
+      text-decoration: none;
+      color: black;
+      font-size: 1rem;
+      font-weight: 500;
+      font-family: 'Poppins', sans-serif;
+      text-transform: uppercase;
+      letter-spacing: 1px;
+      position: relative;
+      transition: all 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .menu a::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -5px;
+      width: 0;
+      height: 2px;
+      background: #550816;
+      transition: width 0.4s cubic-bezier(0.25, 1, 0.5, 1);
+    }
+
+    .menu a:hover {
+      color: #550816;
+      transform: scale(1.1);
+    }
+
+    .menu a:hover::after {
+      width: 100%;
+    }
+
+    .hero {
+      position: absolute;
+      top: 50%;
+      left: 200px;
+      transform: translateY(-50%);
+      text-align: left;
+      z-index: 2;
+    }
+
+    .hero h1 {
+      font-family: 'Poppins', sans-serif;
+      font-size: 3.5rem;
+      font-weight: 700;
+      margin: 0 0 25px 0;
+      color: #550816;
+    }
+
+    .hero p {
+      font-family: 'Roboto', sans-serif;
+      font-size: 1.5rem;
+      font-weight: 500;
+      margin: 12px 0;
+      color: black;
+    }
+
+    .hero a {
+      color: #550816;
+      text-decoration: none;
+      font-weight: 700;
+    }
+
+    @media (max-width: 768px) {
+      .hero { left: 130px; }
+      .hero h1 { font-size: 3rem; }
+      .hero p { font-size: 1.3rem; }
+      .logo-btn { margin-left: 240px; width: 50px; height: 50px; }
+    }
+
+    @media (max-width: 480px) {
+      .hero { left: 20px; }
+      .hero h1 { font-size: 2.2rem; }
+      .hero p { font-size: 1.1rem; }
+      .logo-btn { margin-left: 180px; width: 40px; height: 40px; }
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <a href="main.html" class="logo-btn"></a>
+
+    <div class="menu">
+      <a href="main.html">Home</a>
+      <a href="about.html">Skills</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+    </div>
+  </div>
+
+  <div class="hero">
+    <h1>Contact Me</h1>
+    <p>Email: <a href="mailto:yourname@example.com">dcalt101@gmail.com</a></p>
+    <p>Instagram: <a href="https://www.instagram.com/gs_guki/" target="_blank">@gs_guki</a></p>
+    <p>Twitter: <a href="https://x.com/gs_guki" target="_blank">@gs_guki</a></p>
+    <p>Discord: <a href="https://discord.gg/kcUFE6GVJe" target="_blank">g_ki</a></p>
+  </div>
+</body>
+</html>
